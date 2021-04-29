@@ -13,6 +13,7 @@
     <button 
       (click)="onLike(card)" 
       mat-raised-button
+      class="icon-heart"
       [ngClass]="{'like-blue': card.likes >= 5, 'like-green': card.likes >= 10}">
       <span [ngClass]="{'color-red': card.likes < 5}" class="material-icons">favorite</span> <span
         class="likes-content">{{ card.likes }}</span>
