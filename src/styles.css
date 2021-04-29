@@ -1,0 +1,119 @@
+/* Add application styles & imports to this file! */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Reset */
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Overlay para Loading */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 998;
+}
+
+/* Modal Spinner do Loading */
+.modal-spinner {
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 999;
+}
+
+/* Spinner do Loading */
+.spinner {
+  -webkit-animation: spin 2.5s linear infinite;
+  -moz-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.text-spinner {
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -150px;
+}
+
+.text-header {
+  width: 100%;
+  text-align: right;
+}
+.text-header i {
+  font-size: 30px;
+  vertical-align: sub;
+}
+.text-header span {
+  font-size: 1.5em;
+  font-family: 'Concert One', cursive;
+  margin-left: 10px;
+}
+
+.header-fixed {
+  position: fixed;
+  z-index: 10;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.logo-header {
+  margin-top: -10px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px 30px 30px 30px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border-top: 2px solid #ff0000;
+  font-family: 'Quicksand', sans-serif;
+}

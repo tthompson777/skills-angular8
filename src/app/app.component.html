@@ -1,0 +1,27 @@
+<!-- loaderService é que vereifica o status de loading -->
+<div id="externa" *ngIf="loaderService.isLoading | async">
+
+  <div class="overlay"></div>
+  <div class="modal-spinner">
+    <img class="spinner" src="http://hpelevadores.com.br/spinner.png" alt="Loading...">
+    <span class="text-spinner">Carregando...</span>
+  </div>
+</div>
+
+<!-- Botões no rodapé do card -->
+<mat-toolbar class="header-fixed">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <img class="logo-header" width="150" src="https://hpelevadores.com.br/logo-perinity-transp.png" alt="">
+  </button>
+
+  <div class="text-header">
+    <i class="material-icons">verified</i> <span>Skills</span>
+  </div>
+</mat-toolbar>
+
+<app-dashboard></app-dashboard>
+
+<!-- Radape -->
+<footer class="footer">
+  Copyright Perinity© 2021 
+</footer>

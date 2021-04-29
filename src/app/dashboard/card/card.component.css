@@ -1,0 +1,41 @@
+.card-skill {
+  padding-bottom: 20px;
+  box-shadow: -1px 5px 12px 0px rgba(189,189,189,0.75);
+-webkit-box-shadow: -1px 5px 12px 0px rgba(189,189,189,0.75);
+-moz-box-shadow: -1px 5px 12px 0px rgba(189,189,189,0.75);
+}
+
+.like-blue {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.like-green {
+  background-color: #009688;
+  color: #fff;
+}
+
+.color-red {
+  color: #f44336;
+}
+
+.likes-content {
+  margin-left: 15px;
+}
+
+.icon-reply {
+  transform: scaleX(-1);
+}
+
+.card-footer {
+  border-top: 1px solid rgba(204, 204, 204, 0.253);
+}
+
+.card-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.space-bottom-10 {
+  margin-bottom: 10px;
+}

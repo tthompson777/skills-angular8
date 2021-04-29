@@ -1,0 +1,29 @@
+<mat-card class="card-skill">
+
+  <mat-card-header>
+    <mat-card-title class="card-title">{{card.name}}</mat-card-title>
+  </mat-card-header>
+
+  <img mat-card-image [src]="card.pic" alt="Imagem">
+  <mat-card-content>
+    <p>{{ card.description }}</p>
+  </mat-card-content>
+
+  <mat-card-actions class="card-footer">
+    <button 
+      (click)="onLike(card)" 
+      mat-raised-button
+      [ngClass]="{'like-blue': card.likes >= 5, 'like-green': card.likes >= 10}">
+      <span [ngClass]="{'color-red': card.likes < 5}" class="material-icons">favorite</span> <span
+        class="likes-content">{{ card.likes }}</span>
+    </button>
+
+    <button
+      (click)="onShare('https://www.linkedin.com/in/tiago-rigo-thompson-51743563/')"
+      mat-raised-button>
+      <span class="material-icons icon-reply">reply</span> Compartilhar
+    </button>
+    <div class="space-bottom-10"></div>
+  </mat-card-actions>
+
+</mat-card>
