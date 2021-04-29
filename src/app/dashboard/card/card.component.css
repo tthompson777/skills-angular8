@@ -26,6 +26,9 @@
 .icon-reply {
   transform: scaleX(-1);
 }
+.icon-reply-animate:hover .material-icons {
+  color: #009688;
+}
 
 .card-footer {
   border-top: 1px solid rgba(204, 204, 204, 0.253);
