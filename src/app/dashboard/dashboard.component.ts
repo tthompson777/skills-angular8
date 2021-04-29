@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
 
+  // Listando os cards
   ngOnInit() {
     this.httpClient.get('/api/skills').subscribe((ret: Array<any>) => this.cards = ret);
   }
